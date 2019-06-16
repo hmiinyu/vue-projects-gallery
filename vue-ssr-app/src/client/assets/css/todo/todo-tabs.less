@@ -1,0 +1,41 @@
+.todo-tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  background: #fff;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 100;
+  font-smoothing: antialiased;
+  .left, .tabs, .right {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  .left, .right {
+    width: 150px;
+  }
+  .left {
+    text-align: left;
+  }
+  .right {
+    text-align: right;
+    cursor: pointer;
+  }
+  .tabs {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    .tab-item {
+      display: inline-block;
+      padding: 0 10px;
+      cursor: pointer;
+      text-align: center;
+      min-width: 60px;
+      border: 1px solid rgba(175, 47, 47, 0);
+      &.active {
+        border-color: rgba(175, 47, 47, .4);
+        border-radius: 4px;
+      }
+    }
+  }
+}
